@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Mi web JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Responsive con JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <script type="text/javascript" src="js/script.js">
+  </script>
+</head>
+<body>
+  <div class="grid-container">
+  <header>
+    <h1 id="titulo1">Alquila tu vivienda</h1>
+  </header>
+
+  <section>
+    <div id="formulario">
+    <form action="alquilar.php" method="get">
+  
+
+    <p id="titulo"><b>Caracteristicas de la vivienda</b></p>
+    <p>Nombre: <input type="text" name="nombre" required></p><br>
+    <label for="zona">Seleccione la zona que mas le guste:</label><br>
+    <select id="zona" name="zona">
+      <option value="23">Ciudad Lineal</option>
+      <option value="25">Hortaleza</option>
+      <option value="30">Retiro</option>
+      <option value="20">San Blas</option>
+    </select>
+
+    <p>¿De que tamaño quiere la vivienda?<br><br>
+    <input type="radio" id="pequeño" name="dormitorio" value="pequeño">
+    <label for="pequeño">1 dormitorio, 50 metros</label><br>
+    <input type="radio" id="mediano" name="dormitorio" value="mediano">
+    <label for="mediano">2 dormitorios, 70 metros</label><br>
+    <input type="radio" id="grande" name="dormitorio" value="grande">
+    <label for="grande">3 dormitorios, 100 metros</label>
+    </p>
+
+    <p>Seleccione las mejoras que desee: <br><br>
+    <input type="checkbox" id="calefaccion" name="calefaccion" value="calefaccion">
+    <label for="calefaccion"> Calefaccion</label><br>
+    <input type="checkbox" id="aire" name="aire" value="aire">
+    <label for="aire"> Aire acondicionado</label><br>
+    <input type="checkbox" id="bañera" name="bañera" value="bañera">
+    <label for="bañera"> Bañera hidromasaje</label><br><br>
+    </p>
+    <input type="button" onclick="CalcularPrecio()"
+      value="Calcular precio de la vivienda"><br><br>
+    <input type="submit" value="Enviar para alquilar piso"><br><br>
+    </form><br>
+  <script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf62f1b62fee002a811e91.js?platform=onboarding_modular"></script><script type="text/javascript" async="" src="https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf6214b62fee002a811e3a.js?platform=registration"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf62f1b62fee002a811e91.js?platform=onboarding_modular"></script><script type="text/javascript" async="" src="https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf6214b62fee002a811e3a.js?platform=registration"></script><script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf6214b62fee002a811e3a.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+      <script type="text/javascript">(function () {
+        var ldk = document.createElement('script');
+        ldk.type = 'text/javascript';
+        ldk.async = true;
+        ldk.src = 'https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf62f1b62fee002a811e91.js?platform=onboarding_modular';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ldk, s);
+    })();</script>
+    <div id="salida"></div>
+    </div>
+  </section>
+  </div><br><br>
+</body>
+</html>
+
+
